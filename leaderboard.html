@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaderboard</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta
+    name="description"
+    content="100 AI Powered products by April 2023."
+  />
+  <meta charset="utf-8" />
+  <link rel="icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="canonical" href="https://shipcrew.xyz"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy"/>
+  <meta charset="utf-8"/>
+  <meta name="referrer" content="origin"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="keywords" content="web3, blockchain, crypto, entreprenuer,developer, exchange, bitcoin"/>
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large">
+</head>
+<style>
+    .hidden{
+        display: none;
+        visibility: hidden;
+    }
+    
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    overflow: overlay;
+    width: 5px;
+    z-index: 100;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    overflow: overlay;
+    z-index: 100;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    visibility: visible;
+    border-radius: 100px;
+    width: 3px;
+    background-color: #6c6c6c;
+    z-index: 150;
+}
+
+
+</style>
+<body class="bg-gray-800 text-white font-[Manrope]">
+
+  <div class="container h-screen flex justify-between">
+    <div class="flex flex-col">
+      <div class="-my-2 overflow-x-auto pr-2">
+        <div class="py-2 align-middle inline-block">
+          <div class="shadow overflow-hidden">
+            <table class="w-fit divide-y divide-gray-800">
+              <thead class="bg-gray-900">
+                <tr>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Name</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Score</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white/[0.02] divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">John Doe</td>
+                  <td class="px-6 py-4 whitespace-nowrap">50</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Jane Smith</td>
+                  <td class="px-6 py-4 whitespace-nowrap">40</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Bob Johnson</td>
+                  <td class="px-6 py-4 whitespace-nowrap">35</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Samantha Lee</td>
+                  <td class="px-6 py-4 whitespace-nowrap">30</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Mike Jones</td>
+                  <td class="px-6 py-4 whitespace-nowrap">25</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">John Doe</td>
+                    <td class="px-6 py-4 whitespace-nowrap">50</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Jane Smith</td>
+                    <td class="px-6 py-4 whitespace-nowrap">40</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Bob Johnson</td>
+                    <td class="px-6 py-4 whitespace-nowrap">35</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Samantha Lee</td>
+                    <td class="px-6 py-4 whitespace-nowrap">30</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Mike Jones</td>
+                    <td class="px-6 py-4 whitespace-nowrap">25</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">John Doe</td>
+                    <td class="px-6 py-4 whitespace-nowrap">50</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Jane Smith</td>
+                    <td class="px-6 py-4 whitespace-nowrap">40</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Bob Johnson</td>
+                    <td class="px-6 py-4 whitespace-nowrap">35</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Samantha Lee</td>
+                    <td class="px-6 py-4 whitespace-nowrap">30</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap cursor-pointer user-name">Mike Jones</td>
+                    <td class="px-6 py-4 whitespace-nowrap">25</td>
+                  </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="chart_div" class="w-full h-screen"></div>
+    <div>
+        <p id="project"></p>
+    </div>
+    <p class="lg:text-3xl absolute md:right-[20%] md:text-xl lg:right-[30%] top-[45%] z-[-6]">Click any name to view data</p>
+
+  </div>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+  
+    function drawChart() {
+      var jsonData = [
+        {"project": "" , "name": "John Doe", "score": 50, "data": [["Day 1", 20], ["Day 2", 10], ["Day 3", 20]]},
+        {"project": "" , "name": "Jane Smith", "score": 40, "data": [["Day 1", 15], ["Day 2", 15], ["Day 3", 10]]},
+        {"project": "" , "name": "Bob Johnson", "score": 35, "data": [["Day 1", 10], ["Day 2", 15], ["Day 3", 10]]},
+        {"project": "" , "name": "Samantha Lee", "score": 30, "data": [["Day 1", 5], ["Day 2", 15], ["Day 3", 10]]},
+        {"project": "" , "name": "Mike Jones", "score": 25, "data": [["Day 1", 10], ["Day 2", 5], ["Day 3", 10]]}
+      ];
+      
+  
+      var userNames = document.getElementsByClassName("user-name");
+      for (var i = 0; i < userNames.length; i++) {
+        userNames[i].addEventListener("click", function() {
+          var userName = this.textContent.trim();
+          for (var j = 0; j < jsonData.length; j++) {
+            if (jsonData[j].name === userName) {
+              var userChartData = jsonData[j].data;
+            var dataElement = document.getElementById("project");
+            dataElement.textContent = JSON.stringify(jsonData[j].project);
+            break;
+            }
+          }
+  
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Day');
+        data.addColumn('number', 'Score');
+        data.addRows(userChartData);
+
+  
+        var options = {
+            allowHtml: true,
+            title: userName + "'s Progress",
+            legend: 'none',
+            titleTextStyle:{
+                color:'#FFFFFF'
+            },
+            curveType: 'function',
+            colors: ['#FFF'],
+            backgroundColor: '#1F2937',
+            hAxis: {
+                title: 'Timeline',
+                titleTextStyle: {
+                color: '#8cb2b7' // set color of x-axis label
+                },
+                textStyle: {
+                color: '#8cb2b7' // set color of x-axis tick labels
+                }
+            },
+            vAxis: {
+                title: 'Progress',
+                titleTextStyle: {
+                color: '#8cb2b7' // set color of y-axis label
+                },
+                textStyle: {
+                color: '#8cb2b7' // set color of y-axis tick labels
+                },
+            }
+        }
+    
+          var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+          chart.draw(data, options);
+  
+          document.getElementById('chart_div').classList.remove('hidden');
+        });
+      }
+    }
+  </script>
+  
+</body>
+</html>
