@@ -18,15 +18,15 @@ app.post('/send', (req, res) => {
         service: 'gmail',
         auth: {
             user: 'devignx@gmail.com',
-            pass: ' '
+            pass: 'vzwgnygywtwnzqvv'
         }
     });
 
     let message = {
-        from: 'your_email_address@gmail.com',
+        from: 'devignx@gmail.com',
         to: email,
-        subject: 'Test email from Node.js',
-        html: '<h1>Hello!</h1><p>This is a test email sent from a Node.js application using Nodemailer.</p>'
+        subject: 'Test email from Hari',
+        html: "Hi"
     };
 
     transporter.sendMail(message, (error, info) => {
