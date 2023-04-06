@@ -1,0 +1,12 @@
+{
+  "name": "shipcrew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node nodemail.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
