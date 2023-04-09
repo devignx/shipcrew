@@ -1,0 +1,194 @@
+{
+    "questions": [
+      {
+        "text": "When faced with a difficult problem, how do you typically react?",
+        "options": [
+          {
+            "text": "I tackle it head-on and won't stop until it's solved",
+            "characteristic": "Spectreseek"
+          },
+          {
+            "text": "I take a step back and try to look at it from different angles",
+            "characteristic": "Alterok"
+          },
+          {
+            "text": "I try to find someone else to help me with it",
+            "characteristic": "Erevald"
+          },
+          {
+            "text": "I try to break it down into smaller, more manageable parts",
+            "characteristic": "Gaudmire"
+          }
+        ]
+      },
+      {
+        "text": "How do you typically handle criticism?",
+        "options": [
+          {
+            "text": "I take it as a challenge to improve myself",
+            "characteristic": "Spectreseek"
+          },
+          {
+            "text": "I try to understand where the criticism is coming from and learn from it",
+            "characteristic": "Alterok"
+          },
+          {
+            "text": "I try to avoid criticism as much as possible",
+            "characteristic": "Erevald"
+          },
+          {
+            "text": "I take it in stride and use it to motivate myself",
+            "characteristic": "Gaudmire"
+          }
+        ]
+      },
+      {
+        "text": "What is your approach to learning new things?",
+        "options": [
+          {
+            "text": "I jump right in and learn as I go",
+            "characteristic": "Spectreseek"
+          },
+          {
+            "text": "I like to research and gather information before I start",
+            "characteristic": "Alterok"
+          },
+          {
+            "text": "I prefer to learn from others",
+            "characteristic": "Erevald"
+          },
+          {
+            "text": "I learn best by doing and experimenting",
+            "characteristic": "Gaudmire"
+          }
+        ]
+      },
+      {
+        "text": "How do you typically handle unexpected changes or obstacles?",
+        "options": [
+          {
+            "text": "I adapt quickly and come up with a new plan",
+            "characteristic": "Spectreseek"
+          },
+          {
+            "text": "I take a step back and try to reassess the situation",
+            "characteristic": "Alterok"
+          },
+          {
+            "text": "I become stressed and overwhelmed",
+            "characteristic": "Erevald"
+          },
+          {
+            "text": "I try to find creative solutions to overcome the obstacle",
+            "characteristic": "Gaudmire"
+          }
+        ]
+      },
+      {
+        "text": "How do you typically approach decision-making?",
+        "options": [
+          {
+            "text": "I make decisions quickly and confidently",
+            "characteristic": "Spectreseek"
+          },
+          {
+            "text": "I like to weigh all the options and gather input from others",
+            "characteristic": "Alterok"
+          },
+          {
+            "text": "I avoid making decisions as much as possible",
+            "characteristic": "Erevald"
+          },
+          {
+            "text": "I make decisions based on my intuition and feelings",
+            "characteristic": "Gaudmire"
+          }]
+        },
+        {
+          "text": "What motivates you to work hard?",
+          "options": [
+            {
+              "text": "I am driven by my desire to achieve my goals",
+              "characteristic": "Spectreseek"
+            },
+            {
+              "text": "I am motivated by the challenge and opportunity for growth",
+              "characteristic": "Alterok"
+            },
+            {
+              "text": "I am motivated by the praise and recognition of others",
+              "characteristic": "Gaudmire"
+            },
+            {
+              "text": "I am motivated by the prospect of helping others",
+              "characteristic": "Erevald"
+            }
+          ]
+        },
+        {
+          "text": "What do you typically do in your free time?",
+          "options": [
+            {
+              "text": "I like to set personal goals and work towards them",
+              "characteristic": "Spectreseek"
+            },
+            {
+              "text": "I enjoy reading and learning new things",
+              "characteristic": "Alterok"
+            },
+            {
+              "text": "I enjoy spending time with friends and family",
+              "characteristic": "Erevald"
+            },
+            {
+              "text": "I enjoy engaging in creative activities like painting or writing",
+              "characteristic": "Gaudmire"
+            }
+          ]
+        },
+        {
+          "text": "How do you typically handle stressful situations?",
+          "options": [
+            {
+              "text": "I try to remain calm and focused",
+              "characteristic": "Spectreseek"
+            },
+            {
+              "text": "I try to find ways to alleviate the stress, like exercise or meditation",
+              "characteristic": "Alterok"
+            },
+            {
+              "text": "I become easily overwhelmed and struggle to cope",
+              "characteristic": "Erevald"
+            },
+            {
+              "text": "I try to find solutions to the cause of the stress",
+              "characteristic": "Gaudmire"
+            }
+          ]
+        },
+        {
+          "text": "How do you typically approach challenges that are outside of your comfort zone?",
+          "options": [
+            {
+              "text": "I see it as an opportunity to grow and push myself",
+              "characteristic": "Spectreseek"
+            },
+            {
+              "text": "I am cautious but willing to take calculated risks",
+              "characteristic": "Alterok"
+            },
+            {
+              "text": "I prefer to stick to what I know and avoid the challenge",
+              "characteristic": "Erevald"
+            },
+            {
+              "text": "I embrace the challenge and look for ways to learn and improve",
+              "characteristic": "Gaudmire"
+            }
+          ]
+        }
+    ]
+}
+       
+  
