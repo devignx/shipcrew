@@ -82,14 +82,14 @@ const questions = [
     question: "do you prefer...",
     answers: [
       { text: "cats", points: { spectreseek: 0, erevald: 2, gaudmire: 1, alterok: 2 } },
-      { text: "dogs", points: { spectreseek: 2, erevald: 0, gaudmire: 1, alterok: 0 } },
+      { text: "dogs", points: { spectreseek: 2, erevald: 0, gaudmire: 2, alterok: 0 } },
     ],
   },
   {
     question: "if you could time travel, would you...",
     answers: [
       { text: "visit the past", points: { spectreseek: 2, erevald: 1, gaudmire: 1, alterok: 0 } },
-      { text: "visit the future", points: { spectreseek: 0, erevald: 1, gaudmire: 1, alterok: 2 } },
+      { text: "visit the future", points: { spectreseek: 0, erevald: 1, gaudmire: 2, alterok: 2 } },
     ],
   },
   {
@@ -171,7 +171,7 @@ function showResults() {
 
     // Display the results and show the corresponding Instagram filter link.
     quizContainer.innerHTML = `
-      <h2 class='w-10/12 mx-auto font-extrabold text-center text-5xl '>You have been sorted into ${winnerHouse}!</h2>
+      <h2 class='w-10/12 mx-auto font-extrabold text-center text-5xl '>You have been chosen by ${winnerHouse}!</h2>
       <p class='w-10/12 mx-auto font-semibold text-center mt-12 text-xl '>Click the link below to try your ${winnerHouse} Instagram filter:</p>
       <a class='bg-white mt-16 block w-fit p-3 px-6 focus:bg-blue-500 focus:text-white text-black rounded-full m-auto text-black' href="${houseData[winnerHouse].filterLink}" target="_blank">Try the ${winnerHouse} AR Filter</a>
       <a class='bg-white mt-4 block w-fit p-3 px-6 focus:bg-blue-500 focus:text-white text-black rounded-full m-auto text-black' href="${`https://twitter.com/intent/tweet?text=Hey!%20I'm%20a%20part%20of%20${winnerHouse}%20at%20%40_buildspace.%20Checkout%20this%20cool%20AR%20Filter%20by%20%40shipcrewxyz%20${houseData[winnerHouse].filterLink}`}" target="_blank">Share the word</a>
