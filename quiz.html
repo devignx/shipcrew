@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Character Traits Quiz</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;400;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>House Quiz</title>
 </head>
-<body class="bg-gray-200 font-[Manrope]">
-  <div class=" mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-8">Character Traits Quiz</h1>
-    <form id="quiz-form" class="w-3/4 mx-auto bg-white rounded-lg shadow-md px-6 py-8">
-      <div class="mt-6">
-        <button type="submit" class="w-full bg-indigo-600 text-white rounded-lg px-4 py-2 font-bold hover:bg-indigo-700 transition-colors">Submit</button>
-        <div id="result-container" class="hidden"></div>
-      </div>
-    </form>
-  </div>
+<body class="bg-black flex font-bold w-full h-screen lowercase justify-center items-center text-white font-[Manrope]">
+    <p class="text-center absolute bottom-12 text-xl md:text-3xl font-bold mt-8">{ Houses of Buildspace }</p>
+    <div class="bg-black/50 z-[99] fixed w-screen h-screen top-0 "></div>
+    <a href="https://shipcrew.xyz"><img class="z-[99] absolute top-0 right-0 m-6 w-12" src="https://shipcrew.xyz/favicon.png" /></a>
+    <a href="https://buildspace.so"><img class="z-[99] absolute top-0 left-0 m-6 w-12" src="bs-logo.png" /></a>
+    <div class="quiz-container z-[101] transition-all duration-500 ease-in-out">
+        <h1 class="question w-10/12 mx-auto font-bold text-center text-5xl ">Question here</h1>
+        <p class="text-center text-xs opacity-50 font-thin mt-6">Just 12 Questions</p>
+        <div class="answers mt-12 flex flex-wrap md:flex-nowrap w-10/12 m-auto justify-center gap-8">
+            <button class="answer bg-white rounded-full p-3 px-6 focus:bg-blue-500 focus:text-white text-black">Answer 1</button>
+            <button class="answer bg-white rounded-full p-3 px-6 focus:bg-blue-500 focus:text-white text-black">Answer 2</button>
+        </div>
+        <p class="text-sm opacity-50 text-center mt-8 progress"></p>
+        <button class="next-btn bg-white mt-16 p-3 px-6 focus:bg-blue-500 focus:text-white text-black rounded-full m-auto text-black">Next ></button>
+    </div>
+    <script src="script.js"></script>
 </body>
-<script src="quiz.js"></script>
 </html>
